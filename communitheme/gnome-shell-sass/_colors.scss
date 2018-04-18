@@ -2,7 +2,7 @@
 // it gets @if ed depending on $variant
 @import "ubuntu-colors";
 $base_color: $silk;//if($variant == 'light', #FAFAFA, $jet);
-$bg_color: $porcelain;//if($variant == 'light', #fdfdfd, #252525);
+$bg_color: white;//if($variant == 'light', #fdfdfd, #252525);
 $fg_color: $inkstone;//if($variant == 'light', $slate, $porcelain);
 $subheader_fg_color: darken($fg_color, 10%);
 $caption_fg_color: darken($fg_color, 20%);
@@ -36,7 +36,7 @@ $indication_bg_color: #19B6EE;
 $osd_fg_color: $fg_color;
 $osd_bg_color: $bg_color;//#2B2929;
 $button_bg_color: $osd_bg_color;
-$osd_borders_color: $borders_color;
+$osd_borders_color: transparentize($borders_color,0.3);
 //
 $base_hover_color: transparentize($fg_color, 0.85);
 $base_active_color: transparentize($fg_color, 0.80);
